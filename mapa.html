@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AR | Associação das Repúblicas da FEG</title>
+<link rel="icon" href="images/ico.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/ico.png" type="image/x-icon"/>
+<meta name="keywords" content="republicas feg,feg,unesp,Guaratinguetá,guará,engenharia,física,matemática,produção,elétrica,materiais,mecânica,civil,repúblicas,moradia,estudantil,associação,vunesp"/>
+<meta name="description" content="A Associação das Repúblicas da FEG promove a união entre as repúblicas e ajuda na orientação dos novos integrantes da universidade."/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72412832-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<!--Cabeçalho-->
+<div id="logo" class="container">
+	<h1>
+    	<a target="_blank" href="http://www2.feg.unesp.br"><img style="float:right;padding-right:20px;padding-top:20px;" width="20%" src="images/UNESP.png"/></a>
+        <a href="index.html"><img width="40%" src="images/Logo.png"/></a>
+    </h1>
+</div>
+
+
+<!--Corpo-->
+<div id="wrapper" class="container">
+
+	<!--Menu-->
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="index.html" title="">Home</a></li>
+			<li><a href="conceitos.html" title="">Conceitos</a></li>
+			<li><a href="reps_m.html" title="">Reps Masculinas</a></li>
+            <li><a href="reps_f.html" title="">Reps Femininas</a></li>
+            <li class="current_page_item"><a href="mapa.html" title="">Mapa</a></li>
+			<li><a href="sobre.html" title="">Sobre</a></li>
+			<li><a href="contato.html" title="">Contato</a></li>
+		</ul>
+	</div>
+   
+	<div id="page"><div class="title"><h2>Abra o menu na esquerda do mapa para filtrar os marcadores.</h2></div>
+    </div>
+
+	<div id="page2"><iframe src="https://www.google.com/maps/d/embed?mid=zZENjCwWxeGg.kA0GGxLtrCsw" width="100%" height="600"></iframe></div>
+</div>
+
+<!-- 
+<div id="map"  class="container"></div>
+<div id="wrapper" class="container"><div id="page2"></div></div>
+	
+	<script type="text/javascript">
+	
+	var FEG = {lat: -22.803631, lng: -45.190950 };
+	
+	var reps = [
+
+
+['	República T.N.T.	 ',	-22.807097, -45.189505	,' - 7 min da FEG<br/> - Mesa de Sinuca<br/> - TV 49" + TODOS CANAIS<br/> - Spyke, cachorro louco!<br/> - TNT Country Fest <br/> - 5 quartos<br/> - TNT Country Fest<br/> - Dona Inês, maezona de geral; lava, passa, cozinha, da bronca, elogia e curte foto no facebook<br/> - Gringos morando na casa<br/> - Moradores fazendo intercambio<br/> - Moradores bebem e estudam ou estudam e bebem.','images/logos/	República T.N.T.	.jpg','	(12) 3125-8920	 ','	2003	 ','	FFFFFF	 ' ,'m'],
+
+
+
+	];
+			
+	function initMap() 
+	{
+  		var map = new google.maps.Map(document.getElementById('map'),{scrollwheel: 0,zoom: 15, center:	FEG});
+  		var FEGmarker = new google.maps.Marker({position: {lat: -22.803631, lng: -45.190950 }, clickable: false, map:map, title:'FEG', icon: 'images/mapa_unesp.png'});
+		var BURITImarker = new google.maps.Marker({position: {lat: -22.811345, lng: -45.198124 }, clickable: false, map:map, title:'Buriti Shopping', icon: 'images/mapa_buriti.png'});
+		setMarkers(map);
+	}
+	
+	
+	
+	function setMarkers(map)
+	{		
+		
+  		for (var i=0; i<reps.length; i++)
+		{
+			var rep = reps[i];
+			var pinImage =  new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + rep[7],
+        					new google.maps.Size(21, 34),
+        					new google.maps.Point(0,0),
+        					new google.maps.Point(10, 34));
+			var marker = new google.maps.Marker({position:{ lat:rep[1], lng:rep[2]}, map:map, title:rep[0], icon:pinImage });
+			attachInfoWindow(i,marker,rep);
+		}
+	}
+
+	function attachInfoWindow(i,marker,content)
+	{
+  		var infowindow = new google.maps.InfoWindow
+		({content: '<div id="content"><a href="reps_' + content[8] + '.html#' + content[0] + '"><h1>' + content[0] +'</h1></a><img style="border: 0pt none; float:left; padding-right: 10px; padding-bottom:1px" width="30%" height="30%" src="' + content[4] + '"/><p align="justify">' + content[3] + '<br/><strong> Ano: </strong> ' + content[6] + '<strong> Tel: </strong> '+ content[5] + '</p></div>', maxWidth:500 });
+		marker.addListener('click', function() {infowindow.open(marker.get('map'), marker); });
+	}
+	
+	
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsIUw_hB3byIwlu92CqiEMn8dKfYNSoaw&callback=initMap"></script>
+
+<!--Rodapé-->
+<div id="copyright">
+	<p>Diretor: Natan Dejtiar | Vice-Diretora: Letícia Lanfredi | Secretário: Rafael Antunez</p>
+</div>
+</body>
+</html>

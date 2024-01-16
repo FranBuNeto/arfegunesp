@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AR | Associação das Repúblicas da FEG</title>
+<link rel="icon" href="images/ico.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/ico.png" type="image/x-icon"/>
+<meta name="keywords" content="republicas feg,feg,unesp,Guaratinguetá,guará,engenharia,física,matemática,produção,elétrica,materiais,mecânica,civil,repúblicas,moradia,estudantil,associação,vunesp"/>
+<meta name="description" content="A Associação das Repúblicas da FEG promove a união entre as repúblicas e ajuda na orientação dos novos integrantes da universidade."/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72412832-1', 'auto');
+  ga('send', 'pageview');
+</script>z
+</head>
+
+<body>
+<!--Cabeçalho-->
+<div id="logo" class="container">
+	<h1>
+    	<a target="_blank" href="http://www2.feg.unesp.br"><img style="float:right;padding-right:20px;padding-top:20px;" width="20%" src="images/UNESP.png"/></a>
+        <a href="index.html"><img width="40%" src="images/Logo.png"/></a>
+    </h1>
+</div>
+
+<!--Corpo-->
+<div id="wrapper" class="container">
+
+	<!--Menu-->
+	<div id="menu" class="container">
+		<ul>
+			<li class="current_page_item"><a href="index.html" title="">Home</a></li>
+			<li><a href="conceitos.html" title="">Conceitos</a></li>
+			<li><a href="reps_m.html" title="">Reps Masculinas</a></li>
+            <li><a href="reps_f.html" title="">Reps Femininas</a></li>
+            <li><a href="mapa.html" title="">Mapa</a></li>
+			<li><a href="sobre.html" title="">Sobre</a></li>
+			<li><a href="contato.html" title="">Contato</a></li>
+		</ul> 
+	</div>
+    
+<script type="text/jscript">
+    
+	img = new Array('1','2','3','4');
+ 	indice = 0;
+ 
+	setInterval("mudaImg()", 6000);
+	
+	function mudaImg(i)
+	{
+		if (i == 0 || i == 1 || i == 2 || i == 3)
+		indice = i;
+		else
+		{
+			if (indice == img.length - 1)
+			indice = 0;
+			else 
+			indice++;
+		}
+	
+		document.getElementById("banner_img_1").setAttribute("class", "");
+		document.getElementById("banner_img_2").setAttribute("class", "");
+		document.getElementById("banner_img_3").setAttribute("class", "");
+		document.getElementById("banner_img_4").setAttribute("class", "");
+		document.getElementById("banner_img_" + img[indice]).setAttribute("class", "hover");
+		document.getElementById("banner_img").innerHTML = "<img src='images/banner/"+ img[indice] +".jpg' width='1100' height='620' border='0' alt='Banner'>";
+	}
+	
+</script>
+
+	
+    <div id="page2" align="center">
+		<a href="https://www.facebook.com/arfegunesp/" class="button2">Visite nossa página no Facebook!</a>
+	</div>
+    
+    <div id="banner" class="banner">
+	 	<div id="banner_img"><img src="images/banner/1.jpg" width="1100px" height="620px" border="0" alt="Banner"></div>
+    	<div id="botoes">
+    		<a href="javascript:void(0);" id="banner_img_1" class="hover" onclick="mudaImg('0');">1</a>
+        	<a href="javascript:void(0);" id="banner_img_2" onclick="mudaImg('1');">2</a>
+			<a href="javascript:void(0);" id="banner_img_3" onclick="mudaImg('2');">3</a>
+        	<a href="javascript:void(0);" id="banner_img_4" onclick="mudaImg('3');">4</a>
+    	</div>
+	</div>
+    
+    <!--Bloco 1--
+	<div id="three-column" class="container">
+		<div id="tbox1">
+			<div class="title">
+				<h2>Facebook</h2>
+			</div>
+			<p>Fique atualizado com novidades, imagens dos nossos trabalhos e tudo o que precisa saber sobre a AR.</p>
+            <a target="_blank" href="http://www.facebook.com/arfegunesp" class="button">Curta</a>
+        </div>
+		<div id="tbox2">
+			<div class="title">
+				<h2>FEG</h2>
+			</div>
+			<p>Para mais informações sobre o seu curso, ementa, horário de aulas, calendário escolar do ano e mais.</p>
+            <a target="_blank" href="http://www2.feg.unesp.br/#!/graduacao/" class="button">Confira</a>
+        </div>
+		<div id="tbox3">
+			<div class="title">
+				<h2>Localize-se</h2>
+			</div>
+			<p>Veja o nosso mapa com a marcação de todas as Repúblicas associadas, e os principais pontos de Guará.</p>
+            <a href="mapa.html" class="button">Mapa</a>
+        </div>
+	</div>
+    
+    <!--Bloco 2--
+	<div id="page2">
+		<div id="box1">
+			<div class="title">
+            	<h2>Welcome to our website</h2>
+				<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+            </div>
+			<p>This is a free, fully standards-compliant CSS template designed by. The photos in this template are from. This free template is released under the Creative Commons Attribution license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+		</div>
+		<div id="box2">
+			<div class="title">
+				<h2>Fusce ultrices fringilla</h2>
+				<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+            </div>
+			<p>Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Curabitur sit amet nulla. Nam in massa.</p>	
+		</div>
+	</div>
+    
+    <!--Bloco 3--
+	<div id="portfolio">
+		<div class="title">
+			<h2>Nossos Últimos Trabalhos</h2>
+        </div>
+		<ul>
+			<li class="current_item"><img src="images/pic01.jpg" alt="" class="image image-full" /></li>
+			<li class="current_item"><img src="images/pic02.jpg" alt="" class="image image-full" /></li>
+			<li class="current_item"><img src="images/pic03.jpg" alt="" class="image image-full" /></li>
+			<li class="current_item"><img src="images/pic04.jpg" alt="" class="image image-full" /></li>
+			<li class="current_item"><img src="images/pic05.jpg" alt="" class="image image-full" /></li>
+			<li class="current_item"><img src="images/pic06.jpg" alt="" class="image image-full" /></li>
+		</ul>
+	</div>
+    
+<!---->
+
+
+</div>
+
+    
+<!--Rodapé-->
+<div id="copyright">
+	<p>Diretor: Natan Dejtiar | Vice-Diretora: Letícia Lanfredi | Secretário: Rafael Antunez</p>
+</div>
+</body>
+</html>
